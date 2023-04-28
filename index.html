@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fale Conosco</title>
+</head>
+<body>
+
+    <center><fieldset style= "width: 300px" style="height: 500px">
+    <div>
+
+	Dados Pessoais<br><br>
+	<form action="enviar_email" method="POST">
+        
+            
+		<label for="name">Digite seu nome:</label>
+		<input type="text" id="usuario" name="user" minlength="4"
+        maxlength="40" size="20" placeholder="Ex: Claudio Henrique" required> <br><br>
+
+        <label for="name">Idade:</label>
+		<input type="text" id="Idade" name="idade" minlength="4"
+        maxlength="40" size="20" placeholder="18" required> <br><br>
+
+		<label for="email">E-mail:</label>
+		<input type="email" id="email" name="email" minlenght="4"
+        maxlength="40" size="20" placeholder="Ex: trilhasbike@hotmail.com" required><br><br>
+
+        <label for="password">Senha:</label>
+		<input type="password" id="password" name="password" minlenght="4"
+        maxlength="40" size="20" placeholder="Digite uma senha forte" required><br><br>
+		
+        <label for="estado">Estado:</label>
+    <select id="estado" name="estado" required>
+      <option value="">-Selecione-</option>
+      <option value="SP">Ceará</option>
+      <option value="RJ">Acre</option>
+      <option value="MG">`Piauí</option>
+      <option value="RS">Rio Grande do Sul</option>
+    </select><br><br>
+    </div>
+</fieldset>
+  
+<fieldset style= "width: 300px" style="height: 500px">
+    <div>
+		<label for="">Selecione as Tecnologias:</label><br><br>
+
+        <label>
+        <input type="radio" name="HTML" checked>HTML
+        </label>
+
+        <label>
+        <input type="radio" name="CSS">CSS
+        </label>
+
+        <label>
+            <input type="radio" name="JavaScript">JavaScript
+        </label>
+
+        <label>
+            <input type="radio" name="TypeScript">TypeScript
+        </label>
+    </div>
+<br><br>
+    <div>
+
+        <label for="">Selecione sua ocupação:</label><br><br>
+
+        <label>
+        <input type="radio" name="Front-End" checked>Front-end
+        </label>
+
+        <label>
+        <input type="radio" name="Back-End">Back-end
+        </label>
+
+        <label>
+        <input type="radio" name="Full-Stack">Full-Stack
+        </label><br><br>
+    </div>
+
+    <div>
+        <label for=""> Fale sobre você:</label><br><br>
+
+        <label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+        </label>
+    </div>
+
+    <div>
+        <label for=""> Anexe seu Currículo: </label>
+        <input type="submit" value="Escolher Arquivo"> Nenhum arquivo escolhido<br><br>
+    </div>
+
+    <div>
+        <center><input type="submit" value="Enviar"> <input type="reset" value="Cancelar">
+    </div>
+
+</fieldset>
+
+    </form>
+    
+</body>
+</html>
